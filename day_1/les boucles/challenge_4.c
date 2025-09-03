@@ -5,14 +5,19 @@
 int main()
 {
     int n;
-    printf("donner n \n");
+    printf("donner les n premiers nomber impair n \n");
     scanf("%d", &n);
-    for(int i=0; i<n; i++){
-        printf("%d", 2*i+1);
-        if(i< n-1 ){
-            printf(,);
-        }
+
+    printf("les premier nomber impaire est :\n");
+    int compteur=0;
+    int i=1;
+
+    while(compteur<n){
+            printf("%d \n", i);
+            i+=2;
+            compteur++;
     }
+    
     
     return 0;
 }
