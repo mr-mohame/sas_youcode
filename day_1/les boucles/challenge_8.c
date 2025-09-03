@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
+//Challenge 8 : Affichage de la Suite de Fibonacci
 int main()
 {
-    int n, i, up, upp;
-    do{
+    int n, i, b, a;
+    
         printf("donner n \n");
          scanf("%d", &n);
 
-    }while(n<2);
-    upp = 0;
-    up = 1;
+    
+    a = 0;
+    b = 1;
     printf("la suite de fibonnacci sont : \n");
-    printf("upp = %d \n", upp);
-    printf("up = %d \n", up);
+    printf("upp = %d \n", a);
+    printf("up = %d \n", b);
     for(i=2;i<n;i++){
-       int u = upp + up;
+       int u = a + b;
        printf("u %d = %d\n", i,u);
-       upp = up;
-       up = u;
+       a = b;
+       a = u;
 
     }
     return 0;
