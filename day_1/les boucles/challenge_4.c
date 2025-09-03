@@ -13,8 +13,10 @@ int main()
     int i=1;
 
     while(compteur<n){
-            printf("%d \n", i);
-            i+=2;
+            
+            if(i%2!=0){
+         printf("%d \n", i);            }
+            i++
             compteur++;
     }
     
