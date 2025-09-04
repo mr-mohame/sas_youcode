@@ -13,9 +13,10 @@ int main(){
         printf("\n======== menu bibliotheque ========\n");
         printf("1 - Ajouter un Livre au Stock\n");
         printf("2 - Afficher Tous les Livres Disponibles\n");
-        printf("3 - Mettre à Jour la Quantité d'un Livre\n");
-        printf("4 - Supprimer un Livre du Stock\n");
-        printf("5 - Afficher le Nombre Total de Livres en Stock\n");
+        printf("3 - Rechercher un livre par son titre.\n");
+        printf("4 - Mettre à Jour la Quantité d'un Livre\n");
+        printf("5 - Supprimer un Livre du Stock\n");
+        printf("6 - Afficher le Nombre Total de Livres en Stock\n");
         printf("0 - Quitter\n");
 
         printf("enter un choix:\n");
@@ -53,13 +54,23 @@ int main(){
             }
             break;
             case 3:
+            printf("===========Rechercher un livre par son titre==================\n");
+            printf("enter le nom de liver qui vous voulez recherche :");
+            scanf("%s",recherche);
+            for(i=0; i<nlivers; i++){
+                if(strcmp(titer_liver[i], recherche)==0){
+                    printf("voila le liver qui vous avez rechercher:nom de liver  %s , nom de l'auteur : %s , le prix : %f , le quantite : %d \n", titer_liver[i], nom_auteur[i], prix[i], quantite[i]);
+                }
+            }
+            break;
+            case 4:
             printf("===========Mettre à Jour la Quantité d'un Livre==================\n");
             //char recherche[50];
             int nouveau_quantite;
             printf("enter le nom de liver qui vous voulez recherche :");
             scanf("%s",recherche);
             for(i=0; i<nlivers; i++){
-                if(strcmp(titer_liver[i], recherche)==0){
+                if(strcmp(titer_liver[i], recherche)==0){ //strcmp comparer deux chaînes de caractères
                     printf("enter le nouveau quantité\n");
                     scanf("%d", &nouveau_quantite);
                     quantite[i]=nouveau_quantite;
@@ -72,7 +83,7 @@ int main(){
                 }
             }
             break;
-            case 4:
+            case 5:
             printf("===========Supprimer un Livre du Stock==================\n");
             printf("enter le nom de liver qui vous voulez supprimer :");
             scanf("%s", recherche);
@@ -91,7 +102,7 @@ int main(){
                 }
             }
             break;
-            case 5:
+            case 6:
             printf("===========Afficher le Nombre Total de Livres en Stock==================\n");
             for(i=0; i<nlivers; i++){
                 compteur+=quantite[i];   
