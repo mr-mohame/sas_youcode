@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//Challenge 6 : Calcul de la Facture d'Électricité
 
 int main()
 {
