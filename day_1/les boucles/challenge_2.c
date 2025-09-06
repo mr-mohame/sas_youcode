@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+//Challenge 2 : Factorielle d'un Nombre
 
 int main()
 {
