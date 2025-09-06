@@ -8,8 +8,8 @@ int main(){
     int tab_2[5];
     for(i=0; i<5; i++){
         for(j=4; j>=i; j--){
-            tab_2[x] = tab_1[i]; 
-            tab_2[i] = tab_1[4-i];
+            tab_2[j] = tab_1[i]; 
+            tab_2[j] = tab_1[4-i];
         }        
     }
     printf("\n");
@@ -19,8 +19,8 @@ int main(){
     }
     printf("\n");
     //affiche tba 2
-    for(i=0; i<5; i++){
-        printf("%d\n", tab_2[i]);
+    for(j=0; j<5; j++){
+        printf("%d\n", tab_2[j]);
     }
      
 

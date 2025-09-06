@@ -18,7 +18,7 @@ scanf("%d", &facteur);
 printf("---------calcule la multuplication-------\n");
 for(i=0; i<taille; i++){
     int mult = T[i] * facteur;
-    printf("%d * %d = %d\n", T[i], facteur, T[i] * facteur);
+    printf("%d * %d = %d\n", T[i], facteur, mult);
 }
     return 0;
 }
