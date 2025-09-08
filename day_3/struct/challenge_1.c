@@ -11,4 +11,5 @@ int main(){
     printf("nom : %s\n",M.nom);
     printf("prenom : %s\n",M.prenom);
     printf("age : %d\n",M.age);
+    return 0;
 }
